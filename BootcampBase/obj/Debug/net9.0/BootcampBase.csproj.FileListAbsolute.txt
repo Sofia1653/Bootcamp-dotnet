@@ -1,0 +1,15 @@
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.AssemblyInfoInputs.cache
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.AssemblyInfo.cs
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.csproj.CoreCompileInputs.cache
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.sourcelink.json
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\bin\Debug\net9.0\BootcampBase.exe
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\bin\Debug\net9.0\BootcampBase.deps.json
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\bin\Debug\net9.0\BootcampBase.runtimeconfig.json
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\bin\Debug\net9.0\BootcampBase.dll
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\bin\Debug\net9.0\BootcampBase.pdb
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.dll
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\refint\BootcampBase.dll
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.pdb
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\BootcampBase.genruntimeconfig.cache
+C:\Users\alcel\Desktop\Sofia\Cursos\notnet\rider\BootcampBase\BootcampBase\obj\Debug\net9.0\ref\BootcampBase.dll

@@ -1,3 +1,43 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
 
-Console.WriteLine("Hello, World!");
+namespace BootcampBase
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Seja bem-vindo ao sistema de estacionamento\n");
+
+            Console.Write("Qual é o preço inicial? R$ ");
+            decimal precoFixo = Convert.ToDecimal(Console.ReadLine());
+
+            Console.Write("Qual é o preço por hora adicional? R$ ");
+            decimal precoExtra = Convert.ToDecimal(Console.ReadLine());
+            
+            Estacionamento estacionamento = new Estacionamento(precoFixo, precoExtra);
+
+            bool rodando = true;
+            while (rodando)
+            {
+                int opcao = estacionamento.Menu();
+
+                switch (opcao)
+                {
+                    case 1:
+                        estacionamento.CadastrarVeiculo();
+                        break;
+                    case 2:
+                        estacionamento.RemoverVeiculo();
+                        break;
+                    case 3:
+                        estacionamento.ListarVeiculos();
+                        break;
+                    case 4:
+                        rodando = false;
+                        Console.WriteLine("Encerrando o sistema");
+                        break;
+                }
+            }
+        }
+    }
+}
