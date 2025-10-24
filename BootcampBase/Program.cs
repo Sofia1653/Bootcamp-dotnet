@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 
 namespace BootcampBase
 {
@@ -6,7 +6,7 @@ namespace BootcampBase
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Seja bem-vindo ao sistema de estacionamento\n");
+            /*Console.WriteLine("Seja bem-vindo ao sistema de estacionamento\n");
 
             Console.Write("Qual é o preço inicial? R$ ");
             decimal precoFixo = Convert.ToDecimal(Console.ReadLine());
@@ -37,7 +37,28 @@ namespace BootcampBase
                         Console.WriteLine("Encerrando o sistema");
                         break;
                 }
-            }
+            }*/
+            
+            Pessoa p1 = new Pessoa();
+            p1.nome = "Sofia";
+            p1.sobrenome = "Gomes";
+            
+            Pessoa p2 = new Pessoa();
+            p2.nome = "Peter";
+            p2.sobrenome = "Araujo";
+            
+            Curso curso = new Curso();
+            curso.nome = "dotnet";
+            curso.alunos = new List<Pessoa>();
+            
+            curso.AdicionarAluno(p1);
+            curso.AdicionarAluno(p2);
+            Console.WriteLine(curso.QuantidadeMatriculados());
+            curso.ListarAlunos();
+
+            curso.RemoverAluno(p2);
+            Console.WriteLine(curso.QuantidadeMatriculados());
+            curso.ListarAlunos();
         }
     }
 }
