@@ -1,6 +1,6 @@
 ﻿namespace BootcampBase;
 
-public class Pessoa
+public class People
 {
     private string _nome;
     private int _idade;
@@ -42,3 +42,25 @@ public class Pessoa
         Console.WriteLine($"Meu nome é {nomeCompleto} e eu tenho {idade} anos.");
     }
 }
+
+//Programa
+/*Pessoa p1 = new Pessoa();
+            p1.nome = "Sofia";
+            p1.sobrenome = "Gomes";
+
+            Pessoa p2 = new Pessoa();
+            p2.nome = "Peter";
+            p2.sobrenome = "Araujo";
+
+            Curso curso = new Curso();
+            curso.nome = "dotnet";
+            curso.alunos = new List<Pessoa>();
+
+            curso.AdicionarAluno(p1);
+            curso.AdicionarAluno(p2);
+            Console.WriteLine(curso.QuantidadeMatriculados());
+            curso.ListarAlunos();
+
+            curso.RemoverAluno(p2);
+            Console.WriteLine(curso.QuantidadeMatriculados());
+            curso.ListarAlunos();*/

@@ -1,4 +1,5 @@
 ﻿using System; 
+using BootcampBase.Hospedagem;
 
 namespace BootcampBase
 {
@@ -6,59 +7,26 @@ namespace BootcampBase
     {
         public static void Main(string[] args)
         {
-            /*Console.WriteLine("Seja bem-vindo ao sistema de estacionamento\n");
+            // Cria os modelos de hóspedes e cadastra na lista de hóspedes
+            List<Pessoa> hospedes = new List<Pessoa>();
 
-            Console.Write("Qual é o preço inicial? R$ ");
-            decimal precoFixo = Convert.ToDecimal(Console.ReadLine());
+            Pessoa p1 = new Pessoa(nome: "Hóspede 1");
+            Pessoa p2 = new Pessoa(nome: "Hóspede 2");
 
-            Console.Write("Qual é o preço por hora adicional? R$ ");
-            decimal precoExtra = Convert.ToDecimal(Console.ReadLine());
-            
-            Estacionamento estacionamento = new Estacionamento(precoFixo, precoExtra);
+            hospedes.Add(p1);
+            hospedes.Add(p2);
 
-            bool rodando = true;
-            while (rodando)
-            {
-                int opcao = estacionamento.Menu();
+            // Cria a suíte
+            Suite suite = new Suite(tipoSuite: "Premium", capacidade: 2, valorDiaria: 30);
 
-                switch (opcao)
-                {
-                    case 1:
-                        estacionamento.CadastrarVeiculo();
-                        break;
-                    case 2:
-                        estacionamento.RemoverVeiculo();
-                        break;
-                    case 3:
-                        estacionamento.ListarVeiculos();
-                        break;
-                    case 4:
-                        rodando = false;
-                        Console.WriteLine("Encerrando o sistema");
-                        break;
-                }
-            }*/
-            
-            Pessoa p1 = new Pessoa();
-            p1.nome = "Sofia";
-            p1.sobrenome = "Gomes";
-            
-            Pessoa p2 = new Pessoa();
-            p2.nome = "Peter";
-            p2.sobrenome = "Araujo";
-            
-            Curso curso = new Curso();
-            curso.nome = "dotnet";
-            curso.alunos = new List<Pessoa>();
-            
-            curso.AdicionarAluno(p1);
-            curso.AdicionarAluno(p2);
-            Console.WriteLine(curso.QuantidadeMatriculados());
-            curso.ListarAlunos();
+            // Cria uma nova reserva, passando a suíte e os hóspedes
+            Reserva reserva = new Reserva(diasReservados: 5);
+            reserva.CadastrarSuite(suite);
+            reserva.CadastrarHospedes(hospedes);
 
-            curso.RemoverAluno(p2);
-            Console.WriteLine(curso.QuantidadeMatriculados());
-            curso.ListarAlunos();
+            // Exibe a quantidade de hóspedes e o valor da diária
+            Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
+            Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
         }
     }
 }

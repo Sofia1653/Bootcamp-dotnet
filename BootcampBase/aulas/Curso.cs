@@ -3,9 +3,9 @@
 public class Curso
 {
     public string nome { get; set; }
-    public List<Pessoa> alunos { get; set; }
+    public List<People> alunos { get; set; }
 
-    public void AdicionarAluno(Pessoa aluno)
+    public void AdicionarAluno(People aluno)
     {
         alunos.Add(aluno);
     }
@@ -15,14 +15,14 @@ public class Curso
         return alunos.Count;
     }
 
-    public bool RemoverAluno(Pessoa aluno)
+    public bool RemoverAluno(People aluno)
     {
         return alunos.Remove(aluno);
     }
 
     public void ListarAlunos()
     {
-        foreach (Pessoa aluno in alunos)
+        foreach (People aluno in alunos)
         {
             Console.WriteLine(aluno.nomeCompleto);
         }
